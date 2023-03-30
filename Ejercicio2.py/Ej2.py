@@ -41,3 +41,9 @@ class Lista:
 
         return resultado
 
+    def indice_valor(self, valor):
+        try:
+            indice=self.lista.indez(valor)
+            return indice
+        except ValueError:
+            return -1
