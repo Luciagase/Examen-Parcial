@@ -2,7 +2,7 @@ class Lista:
     def __init__(self, lista):
         self.lista=lista
 
-    def multiplo_de_10_y_menor_que_200(self):
+    def multiplo_de_10_y_menor_que_200(self): #imprime el número en caso de que sea múltiplo de 10 y menor
         for num in self.lista:
             if num%10==0 and num<200:
                 print(num)
@@ -41,8 +41,8 @@ class Lista:
 
         return resultado
 
-    def indice_valor(self, valor):
-        try:
+    def indice_valor(self, valor):# Mira si el número está en la lista y devuelbe un índice
+        try:#Excepción
             indice=self.lista.indez(valor)
             return indice
         except ValueError:

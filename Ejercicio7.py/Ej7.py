@@ -2,16 +2,16 @@ class Nodo():
     info, sig = None, None
 
 class datoPolinomio():
-    def __init__(self, valor, termino):
+    def __init__(self, valor, termino):#Constructor
         self.valor = valor
         self.termino = termino
 
 class polinomio():
-    def __init__(self):
+    def __init__(self):#constructor
         self.termino_mayor = None
         self.grado = -1
 
-def agregar_termino(polinomio, termino, valor):
+def agregar_termino(polinomio, termino, valor): 
     aux = Nodo()
     dato = datoPolinomio(valor, termino)
     aux.info = dato
