@@ -47,3 +47,4 @@ class Lista:
             return indice
         except ValueError:
             return -1
+        
